@@ -3,6 +3,10 @@ language: ruby
 rvm:
  - 2.4.0
 
+addons:
+  code_climate:
+    repo_token: 656f3fb43998b19d7638f3a09979e1c35433cf3cee68f4dd70b98af8f1ae810a
+
 before_install:
   - gem update --system
   - gem --version
@@ -10,3 +14,6 @@ before_install:
   - gem install rails
 
 scrit: rails test
+
+after_success:
+  - bundle exec codeclimate-test-reporter
