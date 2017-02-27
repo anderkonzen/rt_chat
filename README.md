@@ -1,7 +1,8 @@
-# README
+# RT-Chat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Build Status](https://travis-ci.org/anderkonzen/rt_chat.svg?branch=master)](https://travis-ci.org/anderkonzen/rt_chat)
+
+This is an experiment with ActionCable, where I used it to implement a real-time chat room.
 
 Things you may want to cover:
 
