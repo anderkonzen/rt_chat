@@ -9,3 +9,4 @@ before_install:
   - gem update bundler
   - gem install rails
 
+scrit: rails test
