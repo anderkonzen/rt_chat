@@ -1,6 +1,6 @@
 # RT-Chat
 
-[![Build Status](https://travis-ci.org/anderkonzen/rt_chat.svg?branch=master)](https://travis-ci.org/anderkonzen/rt_chat)
+[![Build Status](https://travis-ci.org/anderkonzen/rt_chat.svg?branch=master)](https://travis-ci.org/anderkonzen/rt_chat) [![Code Climate](https://codeclimate.com/github/anderkonzen/rt_chat/badges/gpa.svg)](https://codeclimate.com/github/anderkonzen/rt_chat) [![Test Coverage](https://codeclimate.com/github/anderkonzen/rt_chat/badges/coverage.svg)](https://codeclimate.com/github/anderkonzen/rt_chat/coverage)
 
 This is an experiment with ActionCable, where I used it to implement a real-time chat room.
 
