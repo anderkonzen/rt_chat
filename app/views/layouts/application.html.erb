@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RtChat</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title>RT Chat</title>
+    <%= render 'layouts/application_default' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      <%= render 'layouts/navbar' %>
+
+      <% flash.each do |type, message| %>
+        <%= content_tag(:div, message, class: "alert alert-#{type}") %>
+      <% end %>
+
+      <%= yield %>
+    </div>
   </body>
 </html>
