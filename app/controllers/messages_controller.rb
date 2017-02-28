@@ -1,3 +1,5 @@
+require 'translator'
+
 class MessagesController < ApplicationController
   before_action :user_logged_in?
 
@@ -26,6 +28,7 @@ class MessagesController < ApplicationController
   end
 
   def message_params
+    params[:message][:content] = Translator.translate(params[:message][:content], params[:dialect])
     params.require(:message).permit(:content)
   end
 

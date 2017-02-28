@@ -15,6 +15,11 @@
             <div class="form-group">
               <%= f.text_area :content, class: 'form-control'%>
             </div>
+
+
+            <%= select_tag(:dialect, options_for_select(
+              [["Yoda", "yoda"], ["Valley Girl", "valley"], ["Binary", "binary"]], "yoda")) %>
+
             <%= f.submit 'Send!', id: 'send_message' %>
           <% end %>
         </div>
