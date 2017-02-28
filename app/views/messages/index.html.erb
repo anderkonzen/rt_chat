@@ -4,18 +4,18 @@
     <div class="panel panel-default">
       <div class="panel-body">
 
-        <div class="message_area">
+        <div id="messages">
           <% if @messages.any? %>
             <%= render @messages %>
           <% end %> 
         </div>
 
         <div class="message_input">
-          <%= form_for(@message) do |f| %>
+          <%= form_for(@message, remote: true) do |f| %>
             <div class="form-group">
               <%= f.text_area :content, class: 'form-control'%>
             </div>
-            <%= f.submit 'Send!' %>
+            <%= f.submit 'Send!', id: 'send_message' %>
           <% end %>
         </div>
 
